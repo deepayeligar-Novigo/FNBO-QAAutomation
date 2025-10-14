@@ -11,6 +11,6 @@ public class PersonalInfoPageXpath {
     public static final String PERSONALINFONEXTBUTON = "//button[normalize-space()='Next']";
     public static final String STATEAPPLY = "//div[@class='dropdown-item ng-star-inserted'][contains(text(),'Alaska')]";
 
-    public static final String IDTYPEMILITARYAPPLY = "//div[@class='dropdown-item ng-star-inserted'][contains(text(),'Military')]";
+    public static final String IDTYPEMILITARYAPPLY = "//div[contains(text(),'Military')]";
     public static final String idTypeStateIdApply ="//div[@class='dropdown-item ng-star-inserted'][contains(text(),'State ID')]";
 }

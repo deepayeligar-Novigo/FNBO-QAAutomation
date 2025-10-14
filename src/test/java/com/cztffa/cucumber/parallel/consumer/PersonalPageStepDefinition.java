@@ -131,17 +131,17 @@ public class PersonalPageStepDefinition {
 //        }
 //    }
 //
-////	@And(": I provide the below additional applicant details for {string}")
-////	public void additionalApplicant(String submissionId) throws Throwable {
-////		List<Map<?, ?>> applicantDataStore = DataCSVExtractor.applicantDataStore;
-////		int totalApplicants = 0;
-////		List<Map<String, String>> matchingApplicants = new ArrayList<>();
-////		for (Map<?, ?> row : applicantDataStore) {
-////			if (row.get("submissionId").toString().trim().equals(submissionId)) {
-////				matchingApplicants.add((Map<String, String>) row);
-////				totalApplicants++;
-////			}
-////		}
+//	@And(": I provide the below additional applicant details for {string}")
+//	public void additionalApplicant(String submissionId) throws Throwable {
+//		List<Map<?, ?>> applicantDataStore = DataCSVExtractor.applicantDataStore;
+//		int totalApplicants = 0;
+//		List<Map<String, String>> matchingApplicants = new ArrayList<>();
+//		for (Map<?, ?> row : applicantDataStore) {
+//			if (row.get("submissionId").toString().trim().equals(submissionId)) {
+//				matchingApplicants.add((Map<String, String>) row);
+//				totalApplicants++;
+//			}
+//		}
 //		log.info("Total applicants for submissionId " + submissionId + ": " + matchingApplicants.size());
 //		int currentIndex = 0;
 //		for (int i = 1; i < matchingApplicants.size(); i++) {
