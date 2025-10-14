@@ -15,8 +15,8 @@ import com.cztffa.page.disclosures.DisclosuresPageModel;
 import com.cztffa.page.funding.FundingPageModel;
 import com.cztffa.page.gettingstarted.GettingStartedPageModel;
 import com.cztffa.page.memberdiligence.MemberDiligencePageModel;
-import com.cztffa.page.personalinfo.PersonalInfoPageModel;
-import com.cztffa.page.product.ProductSelectorPageModel;
+import com.cztffa.page.consumer.PersonalInfoPageModel;
+import com.cztffa.page.consumer.ProductSelectorPageModel;
 import com.cztffa.page.review.ReviewPageModel;
 
 import lombok.extern.slf4j.Slf4j;

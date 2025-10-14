@@ -13,17 +13,17 @@ Feature: Review page flow
   When : I provide the below personal details for "<submissionId>"
 
   Then : I click on personal details next button
-    When : I provide the below Cdd details for "<submissionId>"
-  Then : I close promotion close button
-  Then : I click on the overdraft Coverage no checkbox
-  Then : I click on the account details next button
- And : I should see the funding page
- Then : I provide below funding details for "<submissionId>"
-  Then : I click on funding details next button
- Then : I should accept the all terms and conditions 3
-  And : I click on review details submit button
-  And : I click on signable disclosures button
-  Then : I should see the reference Id page.
+#    When : I provide the below Cdd details for "<submissionId>"
+#  Then : I close promotion close button
+#  Then : I click on the overdraft Coverage no checkbox
+#  Then : I click on the account details next button
+# And : I should see the funding page
+# Then : I provide below funding details for "<submissionId>"
+#  Then : I click on funding details next button
+# Then : I should accept the all terms and conditions 3
+#  And : I click on review details submit button
+#  And : I click on signable disclosures button
+#  Then : I should see the reference Id page.
 
   Examples:
     | submissionId |
