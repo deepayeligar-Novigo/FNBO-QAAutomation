@@ -19,5 +19,11 @@ public class PersonalInfoPageXpath {
     public static final String IDTYPEMILITARYAPPLY = "//div[@class='dropdown-item'][contains(text(),'Military')]";
     public static final String idTypeStateIdApply = "//div[@class='dropdown-item ng-star-inserted'][contains(text(),'State ID')]";
 
+<<<<<<< HEAD
 
 }
+=======
+    public static final String IDTYPEMILITARYAPPLY = "//div[contains(text(),'Military')]";
+    public static final String idTypeStateIdApply ="//div[@class='dropdown-item ng-star-inserted'][contains(text(),'State ID')]";
+}
+>>>>>>> 878906a17998d994d2f9afdf4688b9eafed2ecec

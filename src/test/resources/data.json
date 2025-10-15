@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [{"firstName":"Siva","middleName":"Reddy","lastName":"Kunduru","phoneNumber":"7575884554","email":"yterafinan@gmail.com","dob":"02022005","ssn":"995656446","streetAddress1":"1260 dodge street","city":"Omaha","state":"Nebraska","zip":"68102","county":"Douglas","preferredId":"military","identificationNumber":"12345678","issueDate":"01012009","expiryDate":"01012026","stateIssued":"Alabama","occupation":"ART","employer":"test","submissionId":"1"}]
+=======
+[{"firstName":"Siva","middleName":"Reddy","lastName":"Kunduru","phoneNumber":"7575884554","email":"yterafinan@gmail.com","dob":"02022005","ssn":"995656446","streetAddress1":"1260 Dodge Street South","prefferedId":"military","identificationNumber":"12345678","issueDate":"01012009","expiryDate":"01012026","stateIssued":"Alabama","occupation":"ART","employer":"test","submissionId":"1"}]
+>>>>>>> 878906a17998d994d2f9afdf4688b9eafed2ecec

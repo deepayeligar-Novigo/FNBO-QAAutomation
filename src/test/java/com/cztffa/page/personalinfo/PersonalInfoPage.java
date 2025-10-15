@@ -50,6 +50,7 @@ public class PersonalInfoPage extends ProductSelectorPage {
 
     public void addApplicant(Person person, int index) throws InterruptedException {
 //		getSeleniumdriver().getWebDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+<<<<<<< HEAD
         ApplicantUtil applicantUtil = new ApplicantUtil();
         Validation validation = person.getValidation();
         waitForSpinnerToDisappear();
@@ -168,6 +169,38 @@ public class PersonalInfoPage extends ProductSelectorPage {
         Thread.sleep(10000);
 
         addressText.click();
+=======
+		ApplicantUtil applicantUtil = new ApplicantUtil();
+		Validation validation = person.getValidation();
+		waitForSpinnerToDisappear();
+
+		log.info("Entering date of birth");
+		getSeleniumdriver().getWebDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		wait(element(getPersonalInfoPageModel().dateofBirth, index));
+		assertTrue(true);
+		browserActions.scrollToWebElement(getSeleniumdriver(), element(getPersonalInfoPageModel().dateofBirth, index));
+		browserActions.enterTextKeyEntry(getSeleniumdriver(), element(getPersonalInfoPageModel().dateofBirth, index), person.getDob());
+
+		log.info("selecting street address dropdown ::"+person.getStreetAddress1());
+		WebElement streetAddress1=applicantUtil.getWebElement(getSeleniumdriver(),getPersonalInfoPageModel().streetAddress1, index);
+		browserActions.scrollToWebElement(getSeleniumdriver(),streetAddress1);
+		wait(streetAddress1);
+		selectElement(getSeleniumdriver().getWebDriver(),streetAddress1);
+		browserActions.enterText(getSeleniumdriver(),
+				element(getPersonalInfoPageModel().streetAddress1, index), person.getStreetAddress1());
+
+		Thread.sleep(3000);
+		WebElement addressText = applicantUtil.getWebElement(getSeleniumdriver(), getPersonalInfoPageModel().addressText, person.getStreetAddress1());
+		browserActions.scrollToWebElement(getSeleniumdriver(),addressText);
+		wait(addressText);
+		selectElement(getSeleniumdriver().getWebDriver(),addressText);
+		addressText.click();
+
+		Thread.sleep(1000);
+
+//		j.executeScript("arguments[0].scrollIntoView(true)", applicantUtil.getWebElement(getSeleniumdriver(), getPersonalInfoPageModel().city, index),
+//				person.getCity());
+>>>>>>> 878906a17998d994d2f9afdf4688b9eafed2ecec
 
         Thread.sleep(30000);
 
@@ -257,6 +290,7 @@ public class PersonalInfoPage extends ProductSelectorPage {
 //					applicantUtil.getWebElement(getSeleniumdriver(), getPersonalInfoPageModel().employer, index),
 //					person.getEmployer());
 //		}
+<<<<<<< HEAD
 
 
             log.info("entering SSN");
@@ -282,6 +316,30 @@ public class PersonalInfoPage extends ProductSelectorPage {
                    // wait.until(ExpectedConditions.elementToBeClickable(person.getPreferredId().contains("military"));
                     browserActions.clickApply(getSeleniumdriver().getWebDriver(), getPersonalInfoPageModel().idTypeMilitaryApply);
                     Thread.sleep(5000);
+=======
+//
+//		log.info("entering SSN");
+//		browserActions.scrollToWebElement(getSeleniumdriver(), applicantUtil.getWebElement(getSeleniumdriver(), getPersonalInfoPageModel().ssn, index));
+//		browserActions.enterText(getSeleniumdriver(),
+//				applicantUtil.getWebElement(getSeleniumdriver(), getPersonalInfoPageModel().ssn, index),
+//				person.getSsn());
+		Thread.sleep(2000);
+//
+//		log.info("SSN entered");
+
+		if(getSeleniumdriver().getWebDriver().getPageSource().contains("Identification Documents")) {
+			log.info("Identification Documents applicable");
+			browserActions.scrollToWebElement(getSeleniumdriver(), applicantUtil.getWebElement(getSeleniumdriver(), getPersonalInfoPageModel().idType, index));
+			Thread.sleep(1000);
+			wait(element(getPersonalInfoPageModel().idType, index));
+			browserActions.clickApply(getSeleniumdriver().getWebDriver(), applicantUtil.getWebElement(getSeleniumdriver(), getPersonalInfoPageModel().idType, index));
+
+			log.info("selecting preferred id method {}", person.getPrefferedId());
+			if (person.getPrefferedId().equalsIgnoreCase("military")) {
+				Thread.sleep(1000);
+				browserActions.clickApply(getSeleniumdriver().getWebDriver(),
+						getPersonalInfoPageModel().idTypeMilitaryApply);
+>>>>>>> 878906a17998d994d2f9afdf4688b9eafed2ecec
 //			} else if (person.getPrefferedId().equalsIgnoreCase("Resident Alien")) {
 //				browserActions.clickApply(getSeleniumdriver().getWebDriver(),
 //						getPersonalInfoPageModel().idTypeResidentAlienApply);
@@ -289,27 +347,44 @@ public class PersonalInfoPage extends ProductSelectorPage {
 //				browserActions.clickApply(getSeleniumdriver().getWebDriver(),
 //						getPersonalInfoPageModel().idTypeDriverLicenceApply);
 //				getSeleniumdriver().getWebDriver().manage().timeouts().implicitlyWait(11, TimeUnit.SECONDS);
+<<<<<<< HEAD
                    // browserActions.clickApply(getSeleniumdriver().getWebDriver(), applicantUtil.getWebElement(getSeleniumdriver(), getPersonalInfoPageModel().stateIssued, index));
                    // browserActions.clickApply(getSeleniumdriver().getWebDriver(), getPersonalInfoPageModel().stateApply);
                // } else if (person.getPreferredId().equalsIgnoreCase("stateId")) {
 ////				Thread.sleep(2000);
                  //   browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                  //           getPersonalInfoPageModel().idTypeStateIdApply);
+=======
+//				browserActions.clickApply(getSeleniumdriver().getWebDriver(),
+//						applicantUtil.getWebElement(getSeleniumdriver(), getPersonalInfoPageModel().stateIssued, index));
+//				browserActions.clickApply(getSeleniumdriver().getWebDriver(), getPersonalInfoPageModel().stateApply);
+//			} else if (person.getPrefferedId().equalsIgnoreCase("stateId")) {
+////				Thread.sleep(2000);
+//				browserActions.clickApply(getSeleniumdriver().getWebDriver(),
+//						getPersonalInfoPageModel().idTypeStateIdApply);
+>>>>>>> 878906a17998d994d2f9afdf4688b9eafed2ecec
 //				Thread.sleep(2000);
 //				browserActions.clickApply(getSeleniumdriver().getWebDriver(),
 //						applicantUtil.getWebElement(getSeleniumdriver(), getPersonalInfoPageModel().stateIssued, index));
-////				Thread.sleep(2000);
+//				Thread.sleep(2000);
 //				browserActions.clickApply(getSeleniumdriver().getWebDriver(), getPersonalInfoPageModel().stateApply);
 //			} else if (person.getPrefferedId().equalsIgnoreCase("Passport")) {
-////				Thread.sleep(1000);
+//				Thread.sleep(1000);
 //				wait(getPersonalInfoPageModel().idTypePassportApply);
 //				browserActions.clickApply(getSeleniumdriver().getWebDriver(),
 //						getPersonalInfoPageModel().idTypePassportApply);
 //				log.info("Passport selected");
+<<<<<<< HEAD
 ////				Thread.sleep(2000);
                   ///  wait(element(getPersonalInfoPageModel().stateIssued, index));
                    // browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                            // applicantUtil.getWebElement(getSeleniumdriver(), getPersonalInfoPageModel().stateIssued, index));
+=======
+//				Thread.sleep(2000);
+//				wait(element(getPersonalInfoPageModel().stateIssued, index));
+//				browserActions.clickApply(getSeleniumdriver().getWebDriver(),
+//						applicantUtil.getWebElement(getSeleniumdriver(), getPersonalInfoPageModel().stateIssued, index));
+>>>>>>> 878906a17998d994d2f9afdf4688b9eafed2ecec
 //				Thread.sleep(2000);
                     //wait(getPersonalInfoPageModel().citizenshipCountryApply);
                     //browserActions.clickApply(getSeleniumdriver().getWebDriver(), getPersonalInfoPageModel().citizenshipCountryApply);
