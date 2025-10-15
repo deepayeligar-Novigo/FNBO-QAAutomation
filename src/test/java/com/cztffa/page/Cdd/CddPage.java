@@ -55,20 +55,20 @@ public class CddPage extends PersonalInfoPage {
 //
             log.info("Clicking on wire activity");
             Thread.sleep(5000);
-          //  reviewPage.wait(reviewPage.getCddPageModel().WireActivity);
-            browserActions.scrollElementIntoView(seleniumdriver,getCddPageModel().WireActivity);
-            browserActions.clickButton(seleniumdriver, reviewPage.getCddPageModel().WireActivity);
+
+            browserActions.scrollElementIntoView(getSeleniumdriver(),getCddPageModel().WireActivity);
+            browserActions.clickButton(getSeleniumdriver(),getCddPageModel().WireActivity);
             log.info("Wire activity selected");
             Thread.sleep(2000);
-            //reviewPage.spinner();
+
 
             log.info("Clicking on Cddnext button");
             Thread.sleep(5000);
-            reviewPage.wait(reviewPage.getCddPageModel().CddNextButton);
-            browserActions.scrollElementIntoView(seleniumdriver, reviewPage.getCddPageModel().CddNextButton);
-            browserActions.clickButton(seleniumdriver, reviewPage.getCddPageModel().CddNextButton);
+
+            browserActions.scrollElementIntoView(getSeleniumdriver(), getCddPageModel().CddNextButton);
+            browserActions.clickButton(getSeleniumdriver(), getCddPageModel().CddNextButton);
             log.info("next button clicked");
-            Thread.sleep(2000);
-            reviewPage.spinner();
+            Thread.sleep(7000);
+
         }
     }

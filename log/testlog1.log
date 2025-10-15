@@ -11446,3 +11446,190 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [9fd82f7ed15351aa28063be169958de7, findElement {value=//tf-input[@t-model='City__c']//input, using=xpath}]
 Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 140.0.7339.186, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\DEEPA~1.YEL\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54741}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54741/devtoo..., se:cdpVersion: 140.0.7339.186, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: 9fd82f7ed15351aa28063be169958de7
+2025-10-15 11:15:21,061 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Starting scenario Happy flow of single applicant scenario "1" 
+2025-10-15 11:15:21,077 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Starting of home page
+2025-10-15 11:15:21,078 [TestNG-PoolService-0] INFO com.cztffa.page.base.BasePage - Initializing the properties
+2025-10-15 11:15:21,079 [TestNG-PoolService-0] INFO com.cztffa.page.base.BasePage - Successfully loaded the properties
+2025-10-15 11:15:21,578 [TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 140.0.7339.207 (resolved driver for Chrome 140)
+2025-10-15 11:15:21,616 [TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Deepa.Yeligar\.cache\selenium\chromedriver\win64\140.0.7339.207\chromedriver.exe
+2025-10-15 11:15:21,626 [TestNG-PoolService-0] INFO com.cztffa.webbrowser.ChromeBrowserSetupImpl - Launching chrome driver
+2025-10-15 11:15:23,813 [TestNG-PoolService-0] INFO com.cztffa.application.ChromeWebApplication - Chrome launched
+2025-10-15 11:15:27,023 [TestNG-PoolService-0] INFO com.cztffa.driver.SeleniumUIDriver - Application launched
+2025-10-15 11:15:27,023 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - loaded home page 
+2025-10-15 11:15:29,410 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Before click of consumer tab
+2025-10-15 11:15:31,781 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (07083d129af36386c204093176a830c8)] -> xpath: //h2[contains(text(),'Consumer')]]
+2025-10-15 11:15:31,956 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - On click of consumer tab
+2025-10-15 11:15:31,962 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Clicking all products for submissionId: 1
+2025-10-15 11:15:32,514 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Clicked product: FreeCheckingAccount
+2025-10-15 11:15:32,910 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Clicked product: PremierCheckingAccount
+2025-10-15 11:15:32,921 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Before click of checkout btn
+2025-10-15 11:15:36,422 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (07083d129af36386c204093176a830c8)] -> xpath: //button[normalize-space()='Checkout']]
+2025-10-15 11:15:36,685 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - On click of checkout btn
+2025-10-15 11:15:40,269 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - On getting started page
+2025-10-15 11:15:40,486 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Entering details: Person(firstName=Siva, lastName=Kunduru, middleName=Reddy, phoneNumber=7575884554, email=yterafinan@gmail.com, ssn=995656446, dob=02022005, unknown=null, motherName=null, securityWord=null, streetAddress1=1260 dodge street, city=Omaha, zip=68102, state=Nebraska, county=Douglas, homePhone=null, workPhone=null, occupation=ART, WireActivity=null, employer=test, idType=null, identificationNumber=12345678, issueDate=01012009, suffix=null, expiryDate=01012026, citizenShip=null, stateIssued=Alabama, prefferedContactMethod=null, employmentStatus=null, preferredId=military, membershipQualify=null, memberName=null, relationship=null, applicants=null, validation=null, memeberDeligence=null, accountDetails=null, funding=null, ownershipPercentage=null, submissionId=1)
+2025-10-15 11:15:41,704 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Entering first name
+2025-10-15 11:15:41,917 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Entering last name
+2025-10-15 11:15:42,143 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Entering phone number
+2025-10-15 11:15:42,531 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Entering email
+2025-10-15 11:15:42,904 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Accepting policy
+2025-10-15 11:15:42,930 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (07083d129af36386c204093176a830c8)] -> xpath: //tf-checkbox[@t-model='Accepted__c']//input]
+2025-10-15 11:15:43,732 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Clicked on accept button
+2025-10-15 11:15:43,733 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Details entered
+2025-10-15 11:15:43,733 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Personal Information added for submissionId: 1
+2025-10-15 11:15:44,054 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (07083d129af36386c204093176a830c8)] -> xpath: //button[contains(text(), 'Start Application')]]
+2025-10-15 11:15:44,238 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Starting application
+2025-10-15 11:15:49,126 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Navigated to personal information page
+2025-10-15 11:15:49,162 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - validation before setting Validation(skipQualifyButton=false, skipCitizenshipDropDown=false, skipStateDropdown=false, skipEmploymentStatusDropdown=true, skipPreferredContactDropdown=true, skipStateIssuedDropdown=false, skipMemberDiligenceOptions=false, skipQualifyCountry=false)
+2025-10-15 11:15:49,213 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - Entering date of birth
+2025-10-15 11:15:49,651 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - selecting street address dropdown ::1260 dodge street
+2025-10-15 11:15:50,296 [TestNG-PoolService-0] INFO com.cztffa.page.base.BasePage - Selected element (dropdown value or checkbox)
+2025-10-15 11:16:08,311 [TestNG-PoolService-0] INFO com.cztffa.page.base.BasePage - Selected element (dropdown value or checkbox)
+2025-10-15 11:17:11,474 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - After entering state drop down 
+2025-10-15 11:17:16,638 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - After entering Zipcode
+2025-10-15 11:17:21,777 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - After entering county
+2025-10-15 11:17:28,298 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - After entering state drop down 
+2025-10-15 11:17:28,298 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - entering SSN
+2025-10-15 11:17:28,527 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - SSN entered
+2025-10-15 11:17:28,566 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - Identification Documents applicable
+2025-10-15 11:17:39,029 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - selecting preferred id method military
+2025-10-15 11:17:59,471 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Personal Information added for submissionId: 1
+2025-10-15 11:17:59,473 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Clicking on next button
+2025-10-15 11:18:05,779 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (07083d129af36386c204093176a830c8)] -> xpath: //button[normalize-space()='Next']]
+2025-10-15 11:18:05,905 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Next button clicked
+2025-10-15 11:18:27,885 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - validation before settingvalue Validation(skipQualifyButton=false, skipCitizenshipDropDown=false, skipStateDropdown=false, skipEmploymentStatusDropdown=true, skipPreferredContactDropdown=true, skipStateIssuedDropdown=false, skipMemberDiligenceOptions=false, skipQualifyCountry=false)
+2025-10-15 11:18:32,412 [TestNG-PoolService-0] INFO com.cztffa.page.Cdd.CddPage - After entering occupation 
+2025-10-15 11:18:40,801 [TestNG-PoolService-0] INFO com.cztffa.page.Cdd.CddPage - Clicking on wire activity
+2025-10-15 11:18:45,961 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Finished scenario Happy flow of single applicant scenario "1"
+2025-10-15 11:18:45,961 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Final line it got executed 30 
+2025-10-15 11:18:45,962 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Status of the scenario FAILED 
+2025-10-15 11:18:46,386 [TestNG-PoolService-0] INFO com.cztffa.utilities.MyTestListener - Testcase file:///D:/FNBO-QAAutomation/src/test/resources/com/cztffa/cucumber/consumer_digital_parallel/Consumer.featureio.cucumber.plugin.event.Location@768 - FAILED
+2025-10-15 11:18:46,387 [TestNG-PoolService-0] INFO com.cztffa.utilities.MyTestListener - Test Case scenario Happy flow of single applicant scenario "1" execution Finished with the status FAILED
+2025-10-15 11:18:46,387 [TestNG-PoolService-0] ERROR com.cztffa.utilities.MyTestListener - error occured while executing the test case Cannot invoke "com.cztffa.driver.SeleniumDriver.retrieveWebActions()" because "seleniumDriver" is null
+2025-10-15 11:21:19,763 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Starting scenario Happy flow of single applicant scenario "1" 
+2025-10-15 11:21:19,776 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Starting of home page
+2025-10-15 11:21:19,777 [TestNG-PoolService-0] INFO com.cztffa.page.base.BasePage - Initializing the properties
+2025-10-15 11:21:19,780 [TestNG-PoolService-0] INFO com.cztffa.page.base.BasePage - Successfully loaded the properties
+2025-10-15 11:21:20,280 [TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 140.0.7339.207 (resolved driver for Chrome 140)
+2025-10-15 11:21:20,311 [TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Deepa.Yeligar\.cache\selenium\chromedriver\win64\140.0.7339.207\chromedriver.exe
+2025-10-15 11:21:20,321 [TestNG-PoolService-0] INFO com.cztffa.webbrowser.ChromeBrowserSetupImpl - Launching chrome driver
+2025-10-15 11:21:22,424 [TestNG-PoolService-0] INFO com.cztffa.application.ChromeWebApplication - Chrome launched
+2025-10-15 11:21:25,342 [TestNG-PoolService-0] INFO com.cztffa.driver.SeleniumUIDriver - Application launched
+2025-10-15 11:21:25,343 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - loaded home page 
+2025-10-15 11:21:27,620 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Before click of consumer tab
+2025-10-15 11:21:29,972 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (aa2cba1277df66499cc3d3fad6c1e564)] -> xpath: //h2[contains(text(),'Consumer')]]
+2025-10-15 11:21:30,189 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - On click of consumer tab
+2025-10-15 11:21:30,194 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Clicking all products for submissionId: 1
+2025-10-15 11:21:30,684 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Clicked product: FreeCheckingAccount
+2025-10-15 11:21:31,044 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Clicked product: PremierCheckingAccount
+2025-10-15 11:21:31,055 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Before click of checkout btn
+2025-10-15 11:21:34,682 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (aa2cba1277df66499cc3d3fad6c1e564)] -> xpath: //button[normalize-space()='Checkout']]
+2025-10-15 11:21:34,932 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - On click of checkout btn
+2025-10-15 11:21:38,869 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - On getting started page
+2025-10-15 11:21:39,060 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Entering details: Person(firstName=Siva, lastName=Kunduru, middleName=Reddy, phoneNumber=7575884554, email=yterafinan@gmail.com, ssn=995656446, dob=02022005, unknown=null, motherName=null, securityWord=null, streetAddress1=1260 dodge street, city=Omaha, zip=68102, state=Nebraska, county=Douglas, homePhone=null, workPhone=null, occupation=ART, WireActivity=null, employer=test, idType=null, identificationNumber=12345678, issueDate=01012009, suffix=null, expiryDate=01012026, citizenShip=null, stateIssued=Alabama, prefferedContactMethod=null, employmentStatus=null, preferredId=military, membershipQualify=null, memberName=null, relationship=null, applicants=null, validation=null, memeberDeligence=null, accountDetails=null, funding=null, ownershipPercentage=null, submissionId=1)
+2025-10-15 11:21:40,245 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Entering first name
+2025-10-15 11:21:40,445 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Entering last name
+2025-10-15 11:21:40,646 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Entering phone number
+2025-10-15 11:21:41,089 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Entering email
+2025-10-15 11:21:41,352 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Accepting policy
+2025-10-15 11:21:41,380 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (aa2cba1277df66499cc3d3fad6c1e564)] -> xpath: //tf-checkbox[@t-model='Accepted__c']//input]
+2025-10-15 11:21:42,070 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Clicked on accept button
+2025-10-15 11:21:42,071 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Details entered
+2025-10-15 11:21:42,071 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Personal Information added for submissionId: 1
+2025-10-15 11:21:42,357 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (aa2cba1277df66499cc3d3fad6c1e564)] -> xpath: //button[contains(text(), 'Start Application')]]
+2025-10-15 11:21:42,492 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Starting application
+2025-10-15 11:21:47,307 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Navigated to personal information page
+2025-10-15 11:21:47,320 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - validation before setting Validation(skipQualifyButton=false, skipCitizenshipDropDown=false, skipStateDropdown=false, skipEmploymentStatusDropdown=true, skipPreferredContactDropdown=true, skipStateIssuedDropdown=false, skipMemberDiligenceOptions=false, skipQualifyCountry=false)
+2025-10-15 11:21:47,355 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - Entering date of birth
+2025-10-15 11:21:47,679 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - selecting street address dropdown ::1260 dodge street
+2025-10-15 11:21:48,282 [TestNG-PoolService-0] INFO com.cztffa.page.base.BasePage - Selected element (dropdown value or checkbox)
+2025-10-15 11:22:06,268 [TestNG-PoolService-0] INFO com.cztffa.page.base.BasePage - Selected element (dropdown value or checkbox)
+2025-10-15 11:23:09,288 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - After entering state drop down 
+2025-10-15 11:23:14,430 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - After entering Zipcode
+2025-10-15 11:23:19,557 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - After entering county
+2025-10-15 11:23:26,095 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - After entering state drop down 
+2025-10-15 11:23:26,095 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - entering SSN
+2025-10-15 11:23:26,424 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - SSN entered
+2025-10-15 11:23:26,468 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - Identification Documents applicable
+2025-10-15 11:23:36,860 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - selecting preferred id method military
+2025-10-15 11:23:57,270 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Personal Information added for submissionId: 1
+2025-10-15 11:23:57,272 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Clicking on next button
+2025-10-15 11:24:03,599 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (aa2cba1277df66499cc3d3fad6c1e564)] -> xpath: //button[normalize-space()='Next']]
+2025-10-15 11:24:03,725 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Next button clicked
+2025-10-15 11:24:26,708 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - validation before settingvalue Validation(skipQualifyButton=false, skipCitizenshipDropDown=false, skipStateDropdown=false, skipEmploymentStatusDropdown=true, skipPreferredContactDropdown=true, skipStateIssuedDropdown=false, skipMemberDiligenceOptions=false, skipQualifyCountry=false)
+2025-10-15 11:24:31,238 [TestNG-PoolService-0] INFO com.cztffa.page.Cdd.CddPage - After entering occupation 
+2025-10-15 11:24:39,632 [TestNG-PoolService-0] INFO com.cztffa.page.Cdd.CddPage - Clicking on wire activity
+2025-10-15 11:24:45,898 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (aa2cba1277df66499cc3d3fad6c1e564)] -> xpath: //tf-radio//input[@value='No']]
+2025-10-15 11:24:46,076 [TestNG-PoolService-0] INFO com.cztffa.page.Cdd.CddPage - Wire activity selected
+2025-10-15 11:24:48,085 [TestNG-PoolService-0] INFO com.cztffa.page.Cdd.CddPage - Clicking on Cddnext button
+2025-10-15 11:24:54,350 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (aa2cba1277df66499cc3d3fad6c1e564)] -> xpath: //button[normalize-space()='Next']]
+2025-10-15 11:24:54,445 [TestNG-PoolService-0] INFO com.cztffa.page.Cdd.CddPage - next button clicked
+2025-10-15 11:24:56,461 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - cdddetails added for submissionId: 1
+2025-10-15 11:24:56,463 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Finished scenario Happy flow of single applicant scenario "1"
+2025-10-15 11:24:56,463 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Final line it got executed 30 
+2025-10-15 11:24:56,464 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Status of the scenario PASSED 
+2025-10-15 11:24:56,843 [TestNG-PoolService-0] INFO com.cztffa.utilities.MyTestListener - Testcase file:///D:/FNBO-QAAutomation/src/test/resources/com/cztffa/cucumber/consumer_digital_parallel/Consumer.featureio.cucumber.plugin.event.Location@768 - PASSED
+2025-10-15 11:24:56,843 [TestNG-PoolService-0] INFO com.cztffa.utilities.MyTestListener - Test Case scenario Happy flow of single applicant scenario "1" execution Finished with the status PASSED
+2025-10-15 12:04:16,306 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Starting scenario Happy flow of single applicant scenario "1" 
+2025-10-15 12:04:16,326 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Starting of home page
+2025-10-15 12:04:16,327 [TestNG-PoolService-0] INFO com.cztffa.page.base.BasePage - Initializing the properties
+2025-10-15 12:04:16,330 [TestNG-PoolService-0] INFO com.cztffa.page.base.BasePage - Successfully loaded the properties
+2025-10-15 12:04:17,978 [TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 140.0.7339.207 (resolved driver for Chrome 140)
+2025-10-15 12:04:18,014 [TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Deepa.Yeligar\.cache\selenium\chromedriver\win64\140.0.7339.207\chromedriver.exe
+2025-10-15 12:04:18,025 [TestNG-PoolService-0] INFO com.cztffa.webbrowser.ChromeBrowserSetupImpl - Launching chrome driver
+2025-10-15 12:04:20,407 [TestNG-PoolService-0] INFO com.cztffa.application.ChromeWebApplication - Chrome launched
+2025-10-15 12:04:25,763 [TestNG-PoolService-0] INFO com.cztffa.driver.SeleniumUIDriver - Application launched
+2025-10-15 12:04:25,763 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - loaded home page 
+2025-10-15 12:04:28,073 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Before click of consumer tab
+2025-10-15 12:04:31,031 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (32a501166f264b6393ad6d19ed0f2c80)] -> xpath: //h2[contains(text(),'Consumer')]]
+2025-10-15 12:04:31,331 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - On click of consumer tab
+2025-10-15 12:04:31,337 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Clicking all products for submissionId: 1
+2025-10-15 12:04:31,933 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Clicked product: FreeCheckingAccount
+2025-10-15 12:04:32,309 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Clicked product: PremierCheckingAccount
+2025-10-15 12:04:32,320 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Before click of checkout btn
+2025-10-15 12:04:36,124 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (32a501166f264b6393ad6d19ed0f2c80)] -> xpath: //button[normalize-space()='Checkout']]
+2025-10-15 12:04:36,870 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - On click of checkout btn
+2025-10-15 12:04:40,513 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - On getting started page
+2025-10-15 12:04:40,704 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Entering details: Person(firstName=Siva, lastName=Kunduru, middleName=Reddy, phoneNumber=7575884554, email=yterafinan@gmail.com, ssn=995656446, dob=02022005, unknown=null, motherName=null, securityWord=null, streetAddress1=1260 dodge street, city=Omaha, zip=68102, state=Nebraska, county=Douglas, homePhone=null, workPhone=null, occupation=ART, WireActivity=null, employer=test, idType=null, identificationNumber=12345678, issueDate=01012009, suffix=null, expiryDate=01012026, citizenShip=null, stateIssued=Alabama, prefferedContactMethod=null, employmentStatus=null, preferredId=military, membershipQualify=null, memberName=null, relationship=null, applicants=null, validation=null, memeberDeligence=null, accountDetails=null, funding=null, ownershipPercentage=null, submissionId=1)
+2025-10-15 12:04:42,044 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Entering first name
+2025-10-15 12:04:42,264 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Entering last name
+2025-10-15 12:04:42,481 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Entering phone number
+2025-10-15 12:04:42,862 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Entering email
+2025-10-15 12:04:43,132 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Accepting policy
+2025-10-15 12:04:43,156 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (32a501166f264b6393ad6d19ed0f2c80)] -> xpath: //tf-checkbox[@t-model='Accepted__c']//input]
+2025-10-15 12:04:43,957 [TestNG-PoolService-0] INFO com.cztffa.page.product.ProductSelectorPage - Clicked on accept button
+2025-10-15 12:04:43,958 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Details entered
+2025-10-15 12:04:43,958 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Personal Information added for submissionId: 1
+2025-10-15 12:04:44,264 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (32a501166f264b6393ad6d19ed0f2c80)] -> xpath: //button[contains(text(), 'Start Application')]]
+2025-10-15 12:04:44,440 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Starting application
+2025-10-15 12:04:49,373 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Navigated to personal information page
+2025-10-15 12:04:49,404 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - validation before setting Validation(skipQualifyButton=false, skipCitizenshipDropDown=false, skipStateDropdown=false, skipEmploymentStatusDropdown=true, skipPreferredContactDropdown=true, skipStateIssuedDropdown=false, skipMemberDiligenceOptions=false, skipQualifyCountry=false)
+2025-10-15 12:04:49,455 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - Entering date of birth
+2025-10-15 12:04:49,934 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - selecting street address dropdown ::1260 dodge street
+2025-10-15 12:04:50,642 [TestNG-PoolService-0] INFO com.cztffa.page.base.BasePage - Selected element (dropdown value or checkbox)
+2025-10-15 12:05:08,685 [TestNG-PoolService-0] INFO com.cztffa.page.base.BasePage - Selected element (dropdown value or checkbox)
+2025-10-15 12:06:11,798 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - After entering state drop down 
+2025-10-15 12:06:16,976 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - After entering Zipcode
+2025-10-15 12:08:01,081 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - After entering county
+2025-10-15 12:08:07,871 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - After entering state drop down 
+2025-10-15 12:08:07,871 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - entering SSN
+2025-10-15 12:08:08,161 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - SSN entered
+2025-10-15 12:08:08,222 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - Identification Documents applicable
+2025-10-15 12:08:18,760 [TestNG-PoolService-0] INFO com.cztffa.page.personalinfo.PersonalInfoPage - selecting preferred id method military
+2025-10-15 12:08:39,261 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Personal Information added for submissionId: 1
+2025-10-15 12:08:39,263 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Clicking on next button
+2025-10-15 12:08:45,644 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (32a501166f264b6393ad6d19ed0f2c80)] -> xpath: //button[normalize-space()='Next']]
+2025-10-15 12:08:45,835 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - Next button clicked
+2025-10-15 12:09:16,318 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - validation before settingvalue Validation(skipQualifyButton=false, skipCitizenshipDropDown=false, skipStateDropdown=false, skipEmploymentStatusDropdown=true, skipPreferredContactDropdown=true, skipStateIssuedDropdown=false, skipMemberDiligenceOptions=false, skipQualifyCountry=false)
+2025-10-15 12:09:20,893 [TestNG-PoolService-0] INFO com.cztffa.page.Cdd.CddPage - After entering occupation 
+2025-10-15 12:09:29,302 [TestNG-PoolService-0] INFO com.cztffa.page.Cdd.CddPage - Clicking on wire activity
+2025-10-15 12:09:35,584 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (32a501166f264b6393ad6d19ed0f2c80)] -> xpath: //tf-radio//input[@value='No']]
+2025-10-15 12:09:35,682 [TestNG-PoolService-0] INFO com.cztffa.page.Cdd.CddPage - Wire activity selected
+2025-10-15 12:09:37,692 [TestNG-PoolService-0] INFO com.cztffa.page.Cdd.CddPage - Clicking on Cddnext button
+2025-10-15 12:09:43,964 [TestNG-PoolService-0] INFO com.cztffa.browseractions.BrowserActions - Attempting to click: [[ChromeDriver: chrome on windows (32a501166f264b6393ad6d19ed0f2c80)] -> xpath: //button[normalize-space()='Next']]
+2025-10-15 12:09:44,084 [TestNG-PoolService-0] INFO com.cztffa.page.Cdd.CddPage - next button clicked
+2025-10-15 12:09:51,089 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition - cdddetails added for submissionId: 1
+2025-10-15 12:09:51,093 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Finished scenario Happy flow of single applicant scenario "1"
+2025-10-15 12:09:51,093 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Final line it got executed 30 
+2025-10-15 12:09:51,094 [TestNG-PoolService-0] INFO com.cztffa.cucumber.parallel.consumer.ProductStepDefinition - Status of the scenario PASSED 
+2025-10-15 12:09:52,011 [TestNG-PoolService-0] INFO com.cztffa.utilities.MyTestListener - Testcase file:///D:/FNBO-QAAutomation/src/test/resources/com/cztffa/cucumber/consumer_digital_parallel/Consumer.featureio.cucumber.plugin.event.Location@768 - PASSED
+2025-10-15 12:09:52,011 [TestNG-PoolService-0] INFO com.cztffa.utilities.MyTestListener - Test Case scenario Happy flow of single applicant scenario "1" execution Finished with the status PASSED
