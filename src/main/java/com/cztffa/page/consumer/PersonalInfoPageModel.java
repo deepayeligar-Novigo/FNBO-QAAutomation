@@ -19,14 +19,22 @@ public class PersonalInfoPageModel {
     
     public String ssn = "//tf-ssn[@t-model='Party__r.NationalIdentifierValue__c']/descendant::input";
     
-    public String idType = "//tf-dropdown[@t-model='Type__c']/descendant::input";
+    public String preferredId = "//tf-dropdown[@t-model='Type__c']/descendant::input";
     
-    public String identificationNumber = "//tf-expansion-panel//[@t-model='Submission__c.PartyXrefs__r.%s']//tf-input[@t-model='IdentificationNumber__c']/descendant::input";
+    public String identificationNumber = "//tf-input[@t-model='IdentificationNumber__c']/descendant::input";
     
     public String stateIssued = "//tf-expansion-panel//[@t-model='Submission__c.PartyXrefs__r.%s']//tf-dropdown[@t-model='IssuingState__c']/descendant::input";
     
     public String issueDate = "//tf-expansion-panel//[@t-model='Submission__c.PartyXrefs__r.%s']//tf-date[@t-model='IssueDate__c']/descendant::input";
     public String addressText="//div[contains(text(),'%s')]";
+   // public String idNumber ="//tf-expansion-panel//[@t-model='Submission__c.PartyXrefs__r.%s']//tf-input[@t-model='IdentificationNumber__c']/descendant::input";
+    public String City="//tf-input[@t-model='City__c']//input";
+    public String State="//tf-dropdown[@t-model='State__c']//input";
+    public String County="//tf-dropdown[@t-model='County__c']//input";
+    public String Zip="//tf-input[@t-model='ZipCode__c']//input";
+
+
+
 
     @FindBy(xpath = PersonalInfoPageXpath.PERSONALINFONEXTBUTON)
     public WebElement personalInfoNextButon;
@@ -36,7 +44,13 @@ public class PersonalInfoPageModel {
 
     @FindBy(xpath = PersonalInfoPageXpath.STATEAPPLY)
     public WebElement stateApply;
+
     @FindBy(xpath = PersonalInfoPageXpath.idTypeStateIdApply)
     public WebElement idTypeStateIdApply;
+    @FindBy(xpath = PersonalInfoPageXpath.stateOptApply)
+    public WebElement stateOptApply;
+    @FindBy(xpath = PersonalInfoPageXpath.countyoptapply)
+    public WebElement countyoptapply;
+
 
 }

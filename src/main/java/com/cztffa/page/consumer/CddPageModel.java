@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.WebDriver;
 
+
 public class CddPageModel {
     private WebDriver driver;
 
@@ -14,14 +15,14 @@ public class CddPageModel {
     }
 
     public String occupation = "//tf-dropdown[@t-model='OCCUPATION_LAB']//input";
-    
-    @FindBy(xpath = CddPageXpath.WIREACTIVITY)
+    //public String WireActivity="//tf-radio//input[@value='No']";
+    public String employer="//tf-input[@t-model='OCCUPATION_LAB_employed']//input";
+    @FindBy(xpath = CddPageXpath.CddNextButton)
+    public WebElement CddNextButton;
+    @FindBy(xpath = CddPageXpath.WireActivity)
     public WebElement WireActivity;
-    
-    @FindBy(xpath = CddPageXpath.EMPLOYER)
-    public WebElement employer;
-    
-    @FindBy(xpath = CddPageXpath.CDDNEXTBUTON)
-    public WebElement CddNextButon;
-    
+    @FindBy(xpath = CddPageXpath.occupationapply)
+    public WebElement occupationapply;
+
+
 }

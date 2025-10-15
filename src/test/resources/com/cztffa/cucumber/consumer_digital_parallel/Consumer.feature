@@ -13,7 +13,7 @@ Feature: Review page flow
   When : I provide the below personal details for "<submissionId>"
 
   Then : I click on personal details next button
-#    When : I provide the below Cdd details for "<submissionId>"
+    When : I provide the below Cdd details for "<submissionId>"
 #  Then : I close promotion close button
 #  Then : I click on the overdraft Coverage no checkbox
 #  Then : I click on the account details next button

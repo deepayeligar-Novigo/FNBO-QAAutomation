@@ -35,6 +35,9 @@ public class Person {
 	private String city;
 
 	private String zip;
+    private String state;
+    private String county;
+
 
 	private String homePhone;
 
@@ -65,7 +68,7 @@ public class Person {
 
 	private String employmentStatus;
 
-	private String prefferedId;
+	private String preferredId;
 
 	private String membershipQualify;
 

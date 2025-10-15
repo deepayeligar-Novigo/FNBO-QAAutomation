@@ -17,6 +17,7 @@ import com.cztffa.page.gettingstarted.GettingStartedPageModel;
 import com.cztffa.page.memberdiligence.MemberDiligencePageModel;
 import com.cztffa.page.consumer.PersonalInfoPageModel;
 import com.cztffa.page.consumer.ProductSelectorPageModel;
+import com.cztffa.page.consumer.CddPageModel;
 import com.cztffa.page.review.ReviewPageModel;
 
 import lombok.extern.slf4j.Slf4j;
@@ -41,7 +42,7 @@ public class BasePage {
 
 	private String browser;
 
-	private WebDriverWait wait;
+	protected WebDriverWait wait;
 
 	private void loadPropeties() {
 		try {
@@ -88,8 +89,11 @@ public class BasePage {
 	}
 
 	public PersonalInfoPageModel getPersonalInfoPageModel() {
-		return getSeleniumdriver().getWebApplication(getWebBrowserType()).getModel(PersonalInfoPageModel.class);
-	}
+        return getSeleniumdriver().getWebApplication(getWebBrowserType()).getModel(PersonalInfoPageModel.class);
+    }
+    public CddPageModel getCddPageModel() {
+        return getSeleniumdriver().getWebApplication(getWebBrowserType()).getModel(CddPageModel.class);
+    }
 
 	public GettingStartedPageModel getgettingStartedPageModel(){
 		return getSeleniumdriver().getWebApplication(getWebBrowserType()).getModel(GettingStartedPageModel.class);

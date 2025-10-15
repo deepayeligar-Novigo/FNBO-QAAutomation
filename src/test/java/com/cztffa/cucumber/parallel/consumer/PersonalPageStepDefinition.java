@@ -108,28 +108,8 @@ public class PersonalPageStepDefinition {
 			}
 		}
 	}
-//    @When(": I provide the below Cdd details for {string}")
-//    public void CddDetails(String submissionId) throws Throwable {
-//        List<Map<?,?>> applicantDataList = DataCSVExtractor.applicantDataStore;
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        for (int i = 0; i < applicantDataList.size(); i++) {
-//            Map<?,?> row = applicantDataList.get(i);
-//            if (row.get("submissionId").equals(submissionId)) {
-//                JSONObject jsonObject = new JSONObject(row);
-//                Person person = objectMapper.readValue(jsonObject.toString(), Person.class);
-//                Validation validation= new Validation();
-//                validation.setSkipPreferredContactDropdown(true);
-//                validation.setSkipEmploymentStatusDropdown(true);
-//                log.info("validation before setting "+validation);
-//                stepData.setValidation(validation);
-//                person.setValidation(stepData.getValidation());
-//                stepData.setPerson(person);
-//                reviewPage.CddPage(person,0);
-//                log.info("Personal Information added for submissionId: " + submissionId);
-//                break;
-//            }
-//        }
-//    }
+
+
 //
 ////	@And(": I provide the below additional applicant details for {string}")
 ////	public void additionalApplicant(String submissionId) throws Throwable {
@@ -192,4 +172,26 @@ public class PersonalPageStepDefinition {
 		Thread.sleep(2000);
 		reviewPage.spinner();
 	}
-}
+
+@When(": I provide the below Cdd details for {string}")
+public void CddDetails(String submissionId) throws Throwable {
+    List<Map<?, ?>> applicantDataList = DataCSVExtractor.applicantDataStore;
+    ObjectMapper objectMapper = new ObjectMapper();
+    for (int i = 0; i < applicantDataList.size(); i++) {
+        Map<?, ?> row = applicantDataList.get(i);
+        if (row.get("submissionId").equals(submissionId)) {
+            JSONObject jsonObject = new JSONObject(row);
+            Person person = objectMapper.readValue(jsonObject.toString(), Person.class);
+            Validation validation = new Validation();
+            validation.setSkipPreferredContactDropdown(true);
+            validation.setSkipEmploymentStatusDropdown(true);
+            log.info("validation before settingvalue {}", validation);
+            stepData.setValidation(validation);
+            person.setValidation(stepData.getValidation());
+            stepData.setPerson(person);
+            reviewPage.cdddetail(person, 0);
+            log.info("cdddetails added for submissionId: {}", submissionId);
+            break;
+        }
+    }
+}}

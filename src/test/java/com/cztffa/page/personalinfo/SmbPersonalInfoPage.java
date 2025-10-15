@@ -2,24 +2,18 @@ package com.cztffa.page.personalinfo;
 
 
 import com.cztffa.dataproviders.DataCSVExtractor;
-import com.cztffa.objects.Business;
 import com.cztffa.objects.Person;
 import com.cztffa.objects.Validation;
 import com.cztffa.page.businessinfo.BusinessInfoPage;
-import com.cztffa.page.product.SmbProductSelectorPage;
 import com.cztffa.util.ApplicantUtil;
 import org.openqa.selenium.*;
 
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertTrue;
 
 
 import lombok.extern.slf4j.Slf4j;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 @Slf4j
 
@@ -202,28 +196,28 @@ public class SmbPersonalInfoPage extends BusinessInfoPage {
         wait(idType);
         browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                 applicantUtil.getWebElement(getSeleniumdriver(), getSmbPersonalInfoPageModel().idType, index));
-        log.info("selecting preferred id method {}", person.getPrefferedId());
-        if (person.getPrefferedId().equalsIgnoreCase("military")) {
+        log.info("selecting preferred id method {}", person.getPreferredId());
+        if (person.getPreferredId().equalsIgnoreCase("military")) {
             browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                     getSmbPersonalInfoPageModel().idTypeMilitaryApply);
-        } else if (person.getPrefferedId().equalsIgnoreCase("Resident Alien")) {
+        } else if (person.getPreferredId().equalsIgnoreCase("Resident Alien")) {
             browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                     getSmbPersonalInfoPageModel().idTypeResidentAlienApply);
-        } else if (person.getPrefferedId().equalsIgnoreCase("driverLicence")) {
+        } else if (person.getPreferredId().equalsIgnoreCase("driverLicence")) {
             browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                     getSmbPersonalInfoPageModel().idTypeDriverLicenceApply);
             getSeleniumdriver().getWebDriver().manage().timeouts().implicitlyWait(11, TimeUnit.SECONDS);
             browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                     applicantUtil.getWebElement(getSeleniumdriver(), getSmbPersonalInfoPageModel().stateIssued, index));
             browserActions.clickApply(getSeleniumdriver().getWebDriver(), getSmbPersonalInfoPageModel().stateApply);
-        } else if (person.getPrefferedId().equalsIgnoreCase("stateId")) {
+        } else if (person.getPreferredId().equalsIgnoreCase("stateId")) {
             browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                     getSmbPersonalInfoPageModel().idTypeStateIdApply);
             browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                     applicantUtil.getWebElement(getSeleniumdriver(), getSmbPersonalInfoPageModel().stateIssued, index));
             browserActions.clickApply(getSeleniumdriver().getWebDriver(), getSmbPersonalInfoPageModel().stateApply);
 
-        } else if (person.getPrefferedId().equalsIgnoreCase("Passport")) {
+        } else if (person.getPreferredId().equalsIgnoreCase("Passport")) {
 
             waitWithSpinner(getSmbPersonalInfoPageModel().idTypePassportApply);
             log.info("Into the passport section");
@@ -489,28 +483,28 @@ public class SmbPersonalInfoPage extends BusinessInfoPage {
         waitWithSpinner(idType);
         browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                 applicantUtil.getWebElement(getSeleniumdriver(), getSmbPersonalInfoPageModel().idType, index));
-        log.info("selecting preferred id method {}", person.getPrefferedId());
-        if (person.getPrefferedId().equalsIgnoreCase("military")) {
+        log.info("selecting preferred id method {}", person.getPreferredId());
+        if (person.getPreferredId().equalsIgnoreCase("military")) {
             browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                     getSmbPersonalInfoPageModel().idTypeMilitaryApply);
-        } else if (person.getPrefferedId().equalsIgnoreCase("Resident Alien")) {
+        } else if (person.getPreferredId().equalsIgnoreCase("Resident Alien")) {
             browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                     getSmbPersonalInfoPageModel().idTypeResidentAlienApply);
-        } else if (person.getPrefferedId().equalsIgnoreCase("driverLicence")) {
+        } else if (person.getPreferredId().equalsIgnoreCase("driverLicence")) {
             browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                     getSmbPersonalInfoPageModel().idTypeDriverLicenceApply);
             getSeleniumdriver().getWebDriver().manage().timeouts().implicitlyWait(11, TimeUnit.SECONDS);
             browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                     applicantUtil.getWebElement(getSeleniumdriver(), getSmbPersonalInfoPageModel().stateIssued, index));
             browserActions.clickApply(getSeleniumdriver().getWebDriver(), getSmbPersonalInfoPageModel().stateApply);
-        } else if (person.getPrefferedId().equalsIgnoreCase("stateId")) {
+        } else if (person.getPreferredId().equalsIgnoreCase("stateId")) {
             browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                     getSmbPersonalInfoPageModel().idTypeStateIdApply);
             browserActions.clickApply(getSeleniumdriver().getWebDriver(),
                     applicantUtil.getWebElement(getSeleniumdriver(), getSmbPersonalInfoPageModel().stateIssued, index));
             browserActions.clickApply(getSeleniumdriver().getWebDriver(), getSmbPersonalInfoPageModel().stateApply);
 
-        } else if (person.getPrefferedId().equalsIgnoreCase("Passport")) {
+        } else if (person.getPreferredId().equalsIgnoreCase("Passport")) {
             wait(getSmbPersonalInfoPageModel().idTypePassportApply);
             log.info("Into the passport section");
             browserActions.clickApply(getSeleniumdriver().getWebDriver(),
